@@ -1,13 +1,11 @@
-import { useEffect } from "react";
-import { getMovieDetails, searchMovies } from "./api/omdbApi";
+import { MovieProvider } from "./context/MovieContext";
+import Home from "./pages/Home";
 
 function App() {
-  useEffect(() => {
-    searchMovies("Avengers");
-    getMovieDetails("tt0848228");
-  }, []);
   return (
-    <section className="text-3xl font-bold underline">Movie Imdb Clone</section>
+    <MovieProvider>
+      <Home></Home>
+    </MovieProvider>
   );
 }
 
