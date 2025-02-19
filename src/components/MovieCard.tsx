@@ -13,7 +13,7 @@ const MovieCard = ({ movie, onClick }: MovieCardProps) => {
   return (
     <div
       onClick={onClick}
-      className="bg-gray-900 p-4 rounded-lg shadow-md cursor-pointer"
+      className="bg-gray-900 p-4 rounded-lg shadow-md cursor-pointer flex flex-col hover:scale-105 hover:border transition-all "
     >
       <img src={Poster} alt={Title} className="rounded-lg" />
       <h3 className="text-white mt-2 text-lg font-bold">{Title}</h3>

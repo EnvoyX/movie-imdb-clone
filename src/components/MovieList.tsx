@@ -1,5 +1,5 @@
-import MovieCard from "./MovieCard";
-import { useMovieContext } from "../context/MovieContext";
+import MovieCard from './MovieCard';
+import { useMovieContext } from '../context/MovieContext';
 
 const MovieList = () => {
   const { movies, selectMovie } = useMovieContext();

@@ -1,9 +1,9 @@
-import { useMovieContext } from "../context/MovieContext";
-import { useState } from "react";
+import { useMovieContext } from '../context/MovieContext';
+import { useState } from 'react';
 
 const SearchBar = () => {
   const { searchMovies } = useMovieContext();
-  const [query, setQuery] = useState<string>("");
+  const [query, setQuery] = useState<string>('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,7 +21,8 @@ const SearchBar = () => {
       />
       <button
         type="submit"
-        className="bg-teal-600 py-2 px-4 rounded-lg text-white"
+        className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:border hover:scale-105
+         transition-all cursor-pointer"
       >
         Search
       </button>
